@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  menuType: string = 'default';
+  sellerName: string = '';
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
-  }
+    this.route.events.subscribe((val: any) => {
+      //console.log(val.url);      
+      if(val.url){
+        if(localStorage.getItem('seller') && val.url.includes('seller')){
+            //console.log("in seller area");
+            this.menuType = 'seller';
+            if(localStorage.getItem('seller')){
+              let sellerStore  =  localStorage.getItem('seller');
+              let sellerData = sellerStore && JSON.parse(sellerStore);
+              this.sellerName = sellerData.body[0].name;
+            }
+        }
+        else{
+          //console.log("outside seller")
+          this.menuType = 'default';
+        }
+      }
+    });    
+ }
 
+ logout(){
+      localStorage.removeItem('seller');
+      this.route.navigate(['/']);
+ }
 }
