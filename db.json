@@ -18,5 +18,16 @@
       "email": "admin@gmail.com",
       "id": 3
     }
+  ],
+  "products": [    
+    {
+      "name": "samsung",
+      "price": "23000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Good Product",
+      "image": "abx",
+      "id": 2
+    }
   ]
 }
