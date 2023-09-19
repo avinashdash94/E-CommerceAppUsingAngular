@@ -19,15 +19,24 @@
       "id": 3
     }
   ],
-  "products": [    
+  "products": [
     {
+      "category": "Mobile",
+      "color": "black",
+      "description": "Good Product",
+      "image": "https://fastly.picsum.photos/id/817/200/300.jpg?hmac=Egrlh6ZzXMOSu9esbUDMY8PhK3cBCmeqHyWBXm7dnHQ",
       "name": "samsung",
       "price": "23000",
+      "id": 1
+    },
+    {
+      "name": "Cannon carma",
+      "price": "30000",
       "color": "black",
-      "category": "Mobile",
-      "description": "Good Product",
-      "image": "abx",
-      "id": 2
+      "category": "camra",
+      "description": "camera for nature lover",
+      "image": "https://fastly.picsum.photos/id/91/3504/2336.jpg?hmac=tK6z7RReLgUlCuf4flDKeg57o6CUAbgklgLsGL0UowU",
+      "id": 4
     }
   ]
 }
