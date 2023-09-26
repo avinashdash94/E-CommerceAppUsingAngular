@@ -21,7 +21,13 @@
                 <td>{{item.color}}</td>
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
-                <td><button (click)="deleteProduct(item.id)">Delete</button></td>
+                <td><div (click)="deleteProduct(item.id)" style="display: inline;">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </td>
             </tr>
         </tbody>
        

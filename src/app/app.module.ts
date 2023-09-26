@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,15 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     HomeComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    SellerAddProductComponent
+    SellerAddProductComponent,
+    SellerUpdateProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

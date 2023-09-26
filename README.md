@@ -41,3 +41,10 @@ json-server --watch db.json
 4) it will start server the port it shows like( http://localhost:3000)
 5) rnn the url on browser to see all the data in the Resource section if no resurce is visible add some data in Db.json and refereseh the page in browser.
  We can add data from postman too. To know more go to folloing link https://github.com/typicode/json-server
+ 
+font awesome cdn 
+------------------
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/js/all.min.js" integrity="sha512-ocx3trI5wqU15rW421ikZHRPxmBg6+00d56x9AUn1DhS/YFTu0EHoVXSeKbFmXrz4kEQJmus8jOvDgqZ/TyfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+All Icon to check: https://fontawesome.com/v4/icons/
