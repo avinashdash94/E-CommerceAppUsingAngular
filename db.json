@@ -21,12 +21,12 @@
   ],
   "products": [
     {
-      "category": "Mobile",
-      "color": "black",
-      "description": "Good Product",
-      "image": "https://fastly.picsum.photos/id/817/200/300.jpg?hmac=Egrlh6ZzXMOSu9esbUDMY8PhK3cBCmeqHyWBXm7dnHQ",
       "name": "samsung",
       "price": "23000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Good Product",
+      "image": "https://fastly.picsum.photos/id/817/200/300.jpg?hmac=Egrlh6ZzXMOSu9esbUDMY8PhK3cBCmeqHyWBXm7dnHQ",
       "id": 1
     },
     {
