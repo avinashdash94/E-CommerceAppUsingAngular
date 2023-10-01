@@ -48,3 +48,14 @@ font awesome cdn
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/js/all.min.js" integrity="sha512-ocx3trI5wqU15rW421ikZHRPxmBg6+00d56x9AUn1DhS/YFTu0EHoVXSeKbFmXrz4kEQJmus8jOvDgqZ/TyfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
 
 All Icon to check: https://fontawesome.com/v4/icons/
+
+Bootstrap Installation site and command
+---------------------------------------
+Site: https://ng-bootstrap.github.io/#/home
+Command: ng add @ng-bootstrap/ng-bootstrap
+
+IF follow ingIssue faces 
+------------------------
+while installing new npm package(like bootstrap) if versons are not matching use the following command and again install the package 
+
+npm config set legacy-peer-deps true
