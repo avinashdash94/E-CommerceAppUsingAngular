@@ -55,6 +55,60 @@
       "description": "best laptop for professionals",
       "image": "https://picsum.photos/id/7/200/300",
       "id": 6
+    },
+    {
+      "name": "Iphone 15",
+      "price": "79000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Iphone ",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
+      "id": 7
+    },
+    {
+      "name": "Toy Car",
+      "price": "2300",
+      "color": "red",
+      "category": "Toy",
+      "description": "Dream car of all kids",
+      "image": "https://images.unsplash.com/photo-1609708536965-6e5b915b195b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95JTIwY2FyfGVufDB8fDB8fHww&w=1000&q=80",
+      "id": 8
+    },
+    {
+      "name": "Realme Phon",
+      "price": "18000",
+      "color": "purple",
+      "category": "Mo",
+      "description": "",
+      "image": "",
+      "id": 9
+    },
+    {
+      "name": "Realme Phon",
+      "price": "18000",
+      "color": "purple",
+      "category": "Mobile",
+      "description": "best camera phone",
+      "image": "https://fdn2.gsmarena.com/vv/pics/realme/realme-5-rmx1911-3.jpg",
+      "id": 10
+    },
+    {
+      "name": "Poco Phone",
+      "price": "17000",
+      "color": "purple",
+      "category": "Mobile",
+      "description": "best camera phone",
+      "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-m3-1.jpg",
+      "id": 11
+    },
+    {
+      "name": "Redmi Phone",
+      "price": "13000",
+      "color": "blue",
+      "category": "Mobile",
+      "description": "best camera phone",
+      "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1680028893.42691134!500x500.jpg",
+      "id": 12
     }
   ]
 }
