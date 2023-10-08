@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   menuType: string = 'default';
   sellerName: string = '';
+  userName: string = '';
   searchResult: undefined | product[];
   constructor(private route: Router, private product:ProductService) { }
 
@@ -27,6 +28,13 @@ export class HeaderComponent implements OnInit {
             this.sellerName = sellerData.body[0].name;
           }
         }
+         else if(localStorage.getItem('user')){
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore);
+          this.userName = userData.body.name;
+          this.menuType = 'user';
+
+        }
         else {
           //console.log("outside seller")
           this.menuType = 'default';
@@ -39,10 +47,15 @@ export class HeaderComponent implements OnInit {
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
   }
+
+  userLogout(){
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
+  }
+
   searchProduct(query: KeyboardEvent) {
     if (query) {
       const element = query.target as HTMLInputElement;
-      // console.log(element.value);
       this.product.searchProducts(element.value).subscribe((result)=>{
         if(result.length > 5)
           result.length = 5;  // It will limit to only 5 search result

@@ -110,5 +110,13 @@
       "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1680028893.42691134!500x500.jpg",
       "id": 12
     }
+  ],
+  "users": [
+    {
+      "name": "Rahul",
+      "email": "Rahul@gmail.com",
+      "password": "admin123",
+      "id": 1
+    }
   ]
 }

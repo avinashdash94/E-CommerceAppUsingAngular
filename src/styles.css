@@ -10,9 +10,9 @@ body {
 .common-form {
     text-align: center;
     display: flex;
-margin: auto;
-flex-direction: column;
-width: 300px;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
 }
 
 .form-input {
@@ -24,21 +24,22 @@ width: 300px;
 }
 
 .form-button {
- height: 35px;
- border: 1px solid blueviolet;
- cursor: pointer;
+    height: 35px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
 }
 
-.message-p{
-   color: green; 
+.message-p {
+    color: green;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: #00000082;
     border-radius: 5px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     background-color: black;
     border-radius: 5px;
 }
