@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SignUp } from '../data-type';
+import { SignUp, login } from '../data-type';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -16,6 +16,17 @@ export class UserService {
       if(result)
       {
         localStorage.setItem('user', JSON.stringify(result));
+        this.router.navigate(['/']);
+      }
+    });
+  }
+
+  userLogin(data: login){
+    this.http.get<SignUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,
+    {observe: 'response'})
+    .subscribe((result)=> {
+      if(result && result.body){
+        localStorage.setItem('user', JSON.stringify(result.body[0]));
         this.router.navigate(['/']);
       }
     });
