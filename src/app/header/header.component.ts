@@ -8,7 +8,7 @@ import { product } from '../data-type';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  cartItems = 0;
   menuType: string = 'default';
   sellerName: string = '';
   userName: string = '';
@@ -46,6 +46,14 @@ export class HeaderComponent implements OnInit {
           this.menuType = 'default';
         }
       }
+    });
+
+    let cartDaTa = localStorage.getItem('localCart');
+    if(cartDaTa){
+      this.cartItems = JSON.parse(cartDaTa).length;
+    }
+    this.product.cartData.subscribe((items)=>{
+      this.cartItems = items.length;
     });
   }
 
