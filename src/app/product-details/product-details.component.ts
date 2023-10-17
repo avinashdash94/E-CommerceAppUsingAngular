@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { product } from '../data-type';
+import { cart, product } from '../data-type';
 
 @Component({
   selector: 'app-product-details',
@@ -52,10 +52,26 @@ export class ProductDetailsComponent implements OnInit {
   addToCart(){
     if(this.productData){
       this.productData.quantity = this.productQuantity
+      //Note: If user is not loged in than add the cart data into localstore else store into DP for us it is json server
       if(!localStorage.getItem('user')){     
-        // console.log(this.productData);
         this.product.localAddToCart(this.productData);
         this.removeCart = true;
+      }
+      else{
+        let user = localStorage.getItem('user');
+        let userId = user && JSON.parse(user).id;
+       let cartData: cart = {
+        ...this.productData,
+        userId,
+        productId: this.productData.id
+       }
+       delete cartData.id;
+       this.product.addToCart(cartData).subscribe((result)=>{
+        // console.log(result)
+        if(result){
+          alert("Product is added in the cart");
+        }
+       });
       }
     }
   }

@@ -118,5 +118,19 @@
       "password": "admin123",
       "id": 1
     }
+  ],
+  "cart": [
+    {
+      "name": "Laptop 1",
+      "price": "50000",
+      "color": "silver",
+      "category": "Laptop",
+      "description": "best laptop for professionals",
+      "image": "https://picsum.photos/id/1/200/300",
+      "quantity": 4,
+      "userId": 1,
+      "productId": 5,
+      "id": 1
+    }
   ]
 }
