@@ -45,10 +45,10 @@ export class UserAuthComponent implements OnInit {
   //note: it is used to move data from localstore to DB
   localCartToRemoteCart(){
     let localStoreData = localStorage.getItem('localCart');
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id;
     if(localStoreData){
-      let cartDataList: product[] = JSON.parse(localStoreData);
-      let user = localStorage.getItem('user');
-      let userId = user && JSON.parse(user).id;
+      let cartDataList: product[] = JSON.parse(localStoreData);      
       cartDataList.forEach((product: product, index) =>{
         let cartData: cart = {
           ...product,
@@ -78,6 +78,10 @@ export class UserAuthComponent implements OnInit {
       });
 
     }
+
+    setTimeout(()=>{
+      this.product.getCartList(userId);
+    }, 2000);
   }
 
 }
