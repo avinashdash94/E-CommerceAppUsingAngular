@@ -133,42 +133,6 @@
       "id": 1
     },
     {
-      "name": "Iphone 15",
-      "price": "79000",
-      "color": "black",
-      "category": "Mobile",
-      "description": "Iphone ",
-      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 7,
-      "id": 2
-    },
-    {
-      "name": "Iphone 15",
-      "price": "79000",
-      "color": "black",
-      "category": "Mobile",
-      "description": "Iphone ",
-      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 7,
-      "id": 3
-    },
-    {
-      "name": "Iphone 15",
-      "price": "79000",
-      "color": "black",
-      "category": "Mobile",
-      "description": "Iphone ",
-      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
-      "quantity": 7,
-      "userId": 2,
-      "productId": 7,
-      "id": 4
-    },
-    {
       "name": "Laptop 1",
       "price": "50000",
       "color": "silver",
@@ -251,18 +215,6 @@
       "userId": 1,
       "productId": 5,
       "id": 11
-    },
-    {
-      "name": "samsung",
-      "price": "23000",
-      "color": "black",
-      "category": "Mobile",
-      "description": "Good Product",
-      "image": "https://fastly.picsum.photos/id/817/200/300.jpg?hmac=Egrlh6ZzXMOSu9esbUDMY8PhK3cBCmeqHyWBXm7dnHQ",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 1,
-      "id": 12
     }
   ]
 }

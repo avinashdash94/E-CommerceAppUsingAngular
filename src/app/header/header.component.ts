@@ -39,6 +39,7 @@ export class HeaderComponent implements OnInit {
           }
           
           this.menuType = 'user';
+          this.product.getCartList(userData?.name ? userData.id: userData.body.id)
 
         }
         else {
