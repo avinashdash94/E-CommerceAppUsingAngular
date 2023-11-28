@@ -133,88 +133,28 @@
       "id": 1
     },
     {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
+      "name": "samsung",
+      "price": "23000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Good Product",
+      "image": "https://fastly.picsum.photos/id/817/200/300.jpg?hmac=Egrlh6ZzXMOSu9esbUDMY8PhK3cBCmeqHyWBXm7dnHQ",
       "quantity": 1,
       "userId": 1,
-      "productId": 5,
-      "id": 5
+      "productId": 1,
+      "id": 3
     },
     {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
+      "name": "Iphone 15",
+      "price": "79000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Iphone ",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-r1.jpg",
+      "quantity": 6,
       "userId": 1,
-      "productId": 5,
-      "id": 6
-    },
-    {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 7
-    },
-    {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 8
-    },
-    {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 9
-    },
-    {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 10
-    },
-    {
-      "name": "Laptop 1",
-      "price": "50000",
-      "color": "silver",
-      "category": "Laptop",
-      "description": "best laptop for professionals",
-      "image": "https://picsum.photos/id/1/200/300",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 11
+      "productId": 7,
+      "id": 4
     }
   ]
 }

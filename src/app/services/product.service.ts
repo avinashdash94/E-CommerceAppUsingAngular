@@ -75,7 +75,7 @@ export class ProductService {
   getCartList(userId: number){
     return this.http.get<product[]>("http://localhost:3000/cart?userId=" + userId ,
     {observe:'response'}).subscribe((result)=>{
-      console.log(result)
+     // console.log(result)
       if(result && result.body){
         this.cartData.emit(result.body);
       }
@@ -84,6 +84,17 @@ export class ProductService {
 
   removeToCart(cartId: number){
     return this.http.delete("http://localhost:3000/cart/"+ cartId);
+  }
+
+  currentCart(){
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    if(userData?.name){
+      return this.http.get<cart[]>(`http://localhost:3000/cart?userId=${userData.id}`);
+    }
+    else{
+      return this.http.get<cart[]>(`http://localhost:3000/cart?userId=${userData.body.id}`);
+    }
   }
 
 }

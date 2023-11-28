@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { cart, priceSummary } from '../data-type';
 
 @Component({
   selector: 'app-cart-page',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPageComponent implements OnInit {
 
-  constructor() { }
+  cartData:cart[]| undefined;
+  priceSummary: priceSummary={
+    price: 0,
+    discount: 0,
+    tax: 0,
+    delivery: 0,
+    total: 0
+  }
+  constructor(private product:ProductService) {  }
 
   ngOnInit(): void {
+    this.product.currentCart().subscribe((result)=>{
+      // console.log(result)
+      this.cartData = result;
+
+      let price =0;
+      result.forEach((item)=>{ price = price + (+item.price * +item.quantity)})
+      this.priceSummary.price = price;
+      this.priceSummary.discount = price/10;
+      this.priceSummary.tax= price/10;
+      this.priceSummary.delivery = 100;
+      this.priceSummary.total = price +(price/10)+ 100-(price/10);
+    })
   }
 
 }
