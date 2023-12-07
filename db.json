@@ -156,5 +156,23 @@
       "productId": 7,
       "id": 4
     }
+  ],
+  "orders": [
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 697100,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "address": "India",
+      "contact": "9891270709",
+      "totalPrice": 697100,
+      "userId": 1,
+      "id": 2
+    }
   ]
 }
